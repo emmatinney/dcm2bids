@@ -12,10 +12,10 @@ module load discovery
 module load anaconda3/2022.05
 source activate /work/cnelab/conda-dcm2bids
 
-#right now, it is set to run one subject. You can replace Techs_01 with whatever subject you are running. 
+#right now, it is set to run one subject. You can replace Techs_* with whatever subject you are running. 
 
 RAW_DIR=/work/cnelab/TECHS/MRI
-dcm2bids -d ${RAW_DIR}/raw/Techs_04_pre -p 04 -c ${RAW_DIR}/BIDS/BIDS_config.json -o ${RAW_DIR}/BIDS/ 
+dcm2bids -d ${RAW_DIR}/raw/Techs_04_pre -p 04 -s pre -c ${RAW_DIR}/BIDS/BIDS_config.json -o ${RAW_DIR}/BIDS/ 
 
 
 #if you are running more than one subject at a time, you can edit the subj.txt file and add the names of the subjects you are running
