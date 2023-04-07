@@ -1,0 +1,83 @@
+{
+    "descriptions":[
+        
+        {
+            "dataType":"fmap",
+            "customLabels":"fmap_acq-rest_dir-AP",
+            "IntendedFor":3,
+            "criteria":{
+                "ProtocolName":"fmap_acq-rest_dir-AP"
+            }
+        },
+        {
+            "dataType":"fmap",
+            "customLabels":"fmap_acq-rest_dir-PA",
+            "IntendedFor":3,
+            "criteria":{
+                "ProtocolName":"fmap_acq-rest_dir-PA"
+            }
+        },
+        {
+            "dataType": "func",
+            "customLabels": "task-rest_dir_bold",
+            "criteria": {
+                     "SeriesDescription": "func_task-rest_dir-PA"
+                     },
+            "sidecarChanges": {
+                    "TaskName": "rest"
+                    }
+        },
+        {
+            "dataType":"anat",
+            "modalityLabel":"acq",
+            "customLabels": "run-01_T1w",
+            "criteria":{
+                "ProtocolName":"anat-T1w_acq-vNav4e_run-01"
+            }
+        },
+        {
+             "dataType":"fmap",
+             "customLabels":"fmap_acq-dwi_run-01_dir-AP",
+             "IntendedFor":[
+             8,
+             9],
+             "criteria":{
+                 "ProtocolName":"fmap_acq-dMriHcp_run-01_dir-AP"
+             }
+         },
+        {
+             "dataType":"fmap",
+             "customLabels":"fmap_acq-dwi_run-01_dir-PA",
+             "IntendedFor":[
+             8,
+             9],
+             "criteria":{
+                 "ProtocolName":"fmap_acq-dMriHcp_run-01_dir-PA"
+             }
+         },
+         {
+             "dataType": "dwi",
+              "customLabels": "dwi_acq-dwiDir98_dir-AP",
+             "criteria": {
+              "SeriesDescription": "dwi_acq-dMriHcpDir98_dir-AP",
+               "EchoTime": 0.0892
+                }
+         },
+         {
+             "dataType": "dwi",
+             "modalityLabel": "acq",
+              "customLabels": "dwi_acq-dwiDir98_dir-PA",
+             "criteria": {
+              "SeriesDescription": "dwi_acq-dMriHcpDir98_dir-PA",
+               "EchoTime": 0.0892
+                }
+         },
+        {
+            "dataType": "perf",
+            "customLabels": "asl_acq-pcasl",
+            "criteria": {
+                "SeriesDescription": "asl_acq-pcaslTgseMultidelay_dir-AP"
+            }
+          },
+        ]
+}
