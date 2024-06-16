@@ -19,7 +19,7 @@ dcm2niix -h
 
 
 3. Create directory
-RAW_DIR=/scratch/ai.me/data
+RAW_DIR=/scratch/tinney.e/data
 mkdir $RAW_DIR/BIDS
 
 4. Run the dcm2bids helper to get the scanning information
@@ -31,6 +31,8 @@ dcm2bids_helper -d Pilot_1/Pilot_1 -o BIDS/
 Example please see $RAW_DIR/scripts/BIDS_config.json
 
 6. Run dcm2bids
+
+For TECHS you need to run movefiles.sh to ensure you grab the right files, 
 
 Run run_dcm2bids.sh
 Make sure you have a list of participants id 
